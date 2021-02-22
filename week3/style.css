@@ -1,0 +1,26 @@
+body{
+ background-color: rgb(255,155,0)
+}
+p  {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+
+}
+
+h1 {
+  text-shadow: 1px 1px 1px red,
+             2px 2px 1px red;
+  text-align: center
+
+}
+
+h2 {
+  text-shadow: 1px 1px 1px red,
+             2px 2px 1px red;
+  text-align: center
+}
+
+.quote {
+ font-weight: bold;
+ text-align: center
+}
