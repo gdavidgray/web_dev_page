@@ -1,0 +1,54 @@
+/** NEW CSS: display, grid, clip-path, circle, filter, blur, **/
+
+body{
+  background-image: url("space.png")
+}
+
+#face{
+  background-color: rgba(100, 20, 100, 0.5);
+  clip-path: circle(32rem at 48rem 20rem);
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+#sweater{
+ text-align: center;
+}
+
+input {
+  width: 20%;
+  height: auto;
+  margin-right: 10%;
+  margin-left: 10%
+}
+
+#eyes {
+text-align: center;
+}
+
+#nose {
+  text-align: center;
+  border: 4mm ridge rgba(100, 50, 30, .6);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-right: 10%;
+  margin: 10px 600px 10px;
+}
+
+#mouth{
+  text-align: center;
+  border: 4mm ridge rgba(170, 20, 30, .6);
+  margin: 20px 500px 20px;
+}
+
+#newJersey {
+filter: blur(5px);
+}
+#states{
+display: grid;
+grid: repeat(1, 0px) / auto-flow 800px;
+text-align: center;
+}
