@@ -1,0 +1,104 @@
+.albums{
+  position:relative;
+  left:10%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 20px;
+
+}
+
+.album1{
+ border: 5px solid #7FFFD4;
+}
+.album2{
+ border: 5px solid #7FFFD4;
+}
+.album3{
+ border: 5px solid #7FFFD4;
+}
+.album4{
+ border: 5px solid #7FFFD4;
+}
+.album5{
+ border: 5px solid #7FFFD4;
+}
+.album6{
+ border: 5px solid #7FFFD4;
+}
+.album7{
+ border: 5px solid #7FFFD4;
+}
+.album8{
+ border: 5px solid #7FFFD4;
+}
+.album9{
+ border: 5px solid #7FFFD4;
+}
+.album10{
+ border: 5px solid #7FFFD4;
+}
+.album11{
+ border: 5px solid #7FFFD4;
+}
+.album12{
+ border: 5px solid #7FFFD4;
+}
+
+.album1:hover {
+  transform: scale(1.1);
+}
+.album2:hover {
+  transform: scale(1.1);
+}
+.album3:hover {
+  transform: scale(1.1);
+}
+.album4:hover {
+  transform: scale(1.1);
+}
+.album5:hover {
+  transform: scale(1.1);
+}
+.album6:hover {
+  transform: scale(1.1);
+}
+.album7:hover {
+  transform: scale(1.1);
+}
+.album8:hover {
+  transform: scale(1.1);
+}
+.album9:hover {
+  transform: scale(1.1);
+}
+.album10:hover {
+  transform: scale(1.1);
+}
+.album11:hover {
+  transform: scale(1.1);
+}
+.album12:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  margin:auto;
+  text-align: center;
+}
+.navbar {
+  display:grid;
+  grid-template-columns: auto auto auto;
+  height:50px;
+  width:100%;
+  background-color:#7FFFD4;
+}
+.home_button{
+  text-align:center;
+}
+.work_button{
+  text-align:center;
+}
+.chaos_button{
+  text-align: center;
+}
