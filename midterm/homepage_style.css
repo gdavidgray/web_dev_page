@@ -22,7 +22,7 @@ h2 {
 
 .navbar {
   display:grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   height:50px;
   width:100%;
   background-color:#7FFFD4;
