@@ -6,6 +6,7 @@ h1 {
   margin:auto;
   text-align: center;
   font-size: 80px;
+  font-family: monospace;
 }
 h2 {
   margin:auto;
@@ -39,4 +40,5 @@ h2 {
 
 p {
   font-size: 32px;
+  font-family: monospace;
 }
