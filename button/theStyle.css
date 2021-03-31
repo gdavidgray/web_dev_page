@@ -1,0 +1,25 @@
+div {
+    display: flex;
+}
+
+button {
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+button:hover {
+    background-color: green;
+    border: 5px solid black;
+}
+
+
+@keyframes shake{
+   50% {transform: translateX(10px);}
+   100% {transform: translateX(-10px);}
+}
+@keyframes shrink{
+   50% {transform: scale(50%);}
+   100% {transform: scale(0%);}
+}
