@@ -1,0 +1,40 @@
+#SLIDE {
+  background-color: #add8e6;
+  height:860px;
+  width: 1550px;
+}
+#SLIDE_TITLE{
+  text-align: center;
+  font-size: 90px;
+}
+
+#SLIDE_BODY{
+  text-align: left;
+  font-size:50px;
+}
+#POINTS {
+  text-align: left;
+  font-size: 50px;
+}
+
+#sprite{
+ height: 200px;
+ width: 150px;
+}
+
+#images{
+  display: flex;
+  text-align: center;
+}
+
+#image{
+  height: 400px;
+  width: 400px;
+}
+
+#sitemap{
+  margin-left: auto;
+  margin-right: auto;
+ height: 70%;
+ width: 70%;
+}
