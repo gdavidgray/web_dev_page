@@ -1,24 +1,41 @@
-#SLIDE {
-  background-color: #add8e6;
-  height:860px;
-  width: 1550px;
-}
-#SLIDE_TITLE{
+#start{
   text-align: center;
-  font-size: 90px;
+  font-size: 40px;
 }
-
-#SLIDE_BODY{
-  text-align: left;
-  font-size: 30px;
+#Maps{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: center;
 }
-#POINTS {
-  text-align: left;
-  font-size: 30px;
+.map{
+  height: 350px;
+  width: 350px;
 }
-
-#images{
-display:flex;
-text-align: center;
-transform: scale(200%);
+#game{
+  position:relative;
+}
+#fish_collection{
+  position:absolute;
+  top:30px;
+  right:0;
+  height:60px;
+  width:60px;
+}
+#cast{
+  position:absolute;
+  top:30px;
+  left:0;
+  font-size: 34px;
+}
+#intstructions{
+  position:absolute;
+}
+#catch{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  height: 300px;
+  width: 300px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
