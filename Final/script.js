@@ -1,4 +1,4 @@
-let casted, fishingTime, fishBite, catching, catchNumber, missedCatch, caught, caughtNumber, fish, fishType, caughtFish;
+let casted, fishingTime, fishBite, catching, catchNumber, missedCatch, caught, caughtNumber, fish, fishType, caughtFish,onCompendium;
 casted = false;
 fishBite = false;
 catching = 0;
@@ -6,12 +6,14 @@ catchNumber = 10;
 missedCatch = false;
 caught = false;
 caughtNumber = 0;
-fish = ["sturgeon", "halibut", "salmon"];
+fish = ["STURGEON", "HALIBUT", "SALMON"];
 fishType = 0;
-caughtFish = [false,false,false]
-fishingTime = Math.floor(Math.random() * 15000) + 5000;
+caughtFish = [0,0,0]
+fishingTime = Math.floor(Math.random() * 10000) + 5000;
+onCompendium = false;
 
 $("#cast").on('click', castedLine);
+
 
 if (casted != true){
   var image_x = document.getElementById('fish');
@@ -19,32 +21,24 @@ if (casted != true){
 
 }
 
-
-
-
-
-
 function castedLine(){
   casted = true;
   console.log("hi");
   var image_x = document.getElementById('fish');
   image_x.src = "Media/fishing.png";
   setTimeout(fishOnTheLine, fishingTime);
-  fishingTime = Math.floor(Math.random() * 15000) + 5000;
+  fishingTime = Math.floor(Math.random() * 10000) + 5000;
 }
 
 function fishOnTheLine() {
 fishBite = true;
 caught = false;
 missedCatch = false;
-fishType = Math.floor(Math.random() * 2)
+fishType = Math.floor(Math.random() * 3)
 var img = document.getElementById('fish');
 img.src = "Media/fishing_bite.png";
-img.id = "fish";
 var img_x = document.getElementById('catch');
-img_x.src = "Media/"+fish[fishType]+".jpg";
-img_x.hieght = "300";
-img_x.width = "300";
+img_x.src = "Media/catch.png";
 var instructions = document.getElementById('instructions');
 instructions.innerHTML = "rapidly click on fish to reel it in!";
 setTimeout(missed, 5000);
@@ -65,7 +59,7 @@ function catchingFish(){
   if(catching == catchNumber){
     fishCaught();
   }
-}
+ }
 }
 
 function fishCaught(){
@@ -79,7 +73,11 @@ function fishCaught(){
       alert("FISH CAUGHT! YOU GOT A " + fish[fishType]);
       caught = true;
       caughtNumber++;
-      caughtFish[fishType] = true;
+      caughtFish[fishType]++;
+      var numFish = document.getElementById('numFish');
+      numFish.innerHTML = "# of Fish: " + caughtNumber;
+      var typeNum = document.getElementById(''+fish[fishType]);
+      typeNum.innerHTML = "" + fish[fishType]+ ": " + caughtFish[fishType];
       var image_x = document.getElementById('fish');
       image_x.src = "Media/fishing_catch.png";
       $('#catch').attr('src', '');

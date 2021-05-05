@@ -7,9 +7,21 @@
   grid-template-columns: auto auto auto;
   margin: center;
 }
+#Compendium{
+  position:absolute;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+  top:130px;
+  right:20px;
+
+}
 .map{
   height: 350px;
   width: 350px;
+}
+.oceanFish{
+  height: 100px;
+  width: 100px;
 }
 #game{
   position:relative;
@@ -17,7 +29,7 @@
 #fish_collection{
   position:absolute;
   top:30px;
-  right:0;
+  right:20px;
   height:60px;
   width:60px;
 }
@@ -32,10 +44,14 @@
 }
 #catch{
   position:absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
-  height: 300px;
-  width: 300px;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+#numFish{
+  position:absolute;
+  top: 80px;
+  right: 20px;
+
 }
