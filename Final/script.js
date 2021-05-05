@@ -22,12 +22,14 @@ if (casted != true){
 }
 
 function castedLine(){
+  if (casted == false){
   casted = true;
   console.log("hi");
   var image_x = document.getElementById('fish');
   image_x.src = "Media/fishing.png";
   setTimeout(fishOnTheLine, fishingTime);
   fishingTime = Math.floor(Math.random() * 10000) + 5000;
+ }
 }
 
 function fishOnTheLine() {
@@ -65,6 +67,7 @@ function catchingFish(){
 function fishCaught(){
   catching = 0;
   if (missedCatch == true){
+    casted = false;
     alert("FISH GOT AWAY");
     var image_x = document.getElementById('fish');
     image_x.src = "Media/fishing_missed.png";
@@ -72,6 +75,7 @@ function fishCaught(){
   }else {
       alert("FISH CAUGHT! YOU GOT A " + fish[fishType]);
       caught = true;
+      casted = false;
       caughtNumber++;
       caughtFish[fishType]++;
       var numFish = document.getElementById('numFish');
