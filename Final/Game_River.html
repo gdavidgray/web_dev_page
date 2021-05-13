@@ -1,0 +1,36 @@
+
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/png" href=""/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="script_river.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+<body>
+  <h1> FISHING SIMULATOR </h1>
+  <div>
+    <div id = "game">
+    <audio id="water_sound"> <source src="Media/boat.wav" > </audio>
+    <audio id="fish_collected"> <source src="Media/fish_collected.wav" > </audio>
+    <audio id="fish_realing"> <source src="Media/fish_realing.wav" > </audio>
+    <audio id="fish_released"> <source src="Media/fish_released.wav"> </audio>
+    <p id = "instructions"> Click CAST LINE and wait for a bite! </p>
+    <button id = "cast"> CAST LINE </button>
+    <img id="catch"></img>
+    <img id="fish"></img>
+     <img id="fish_collection" src = "Media/fish_barell.png"> </img>
+    <p id = "numFish"> # of Fish: 0 </p>
+    <div id = "Compendium">
+      <img src= "Media/Bluegill.png" class = "oceanFish" ></img>
+        <p id = "BLUEGILL"> BLUEGILL: 0</p>
+      <img src= "Media/Humpback_Chub.png" class = "oceanFish" ></img>
+        <p id = "HUMPBACK CHUB"> HUMPBACK CHUB: 0</p>
+      <img src= "Media/Yellow_Perch.png" class = "oceanFish" ></img>
+       <p id = "YELLOW PERCH"> YELLOW PERCH: 0</p>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>

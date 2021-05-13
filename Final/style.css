@@ -1,11 +1,18 @@
+
+}
+}
 #start{
   text-align: center;
   font-size: 40px;
 }
 #Maps{
+  position:absolute;
   display: grid;
-  grid-template-columns: auto auto auto;
-  margin: center;
+  grid-template-columns: auto auto;
+  top: 25%;
+  left: 25%;
+  font-family: CustomFont, sans-serif;
+
 }
 #Compendium{
   position:absolute;
@@ -13,6 +20,7 @@
   grid-template-rows: auto auto auto auto auto auto;
   top:130px;
   right:20px;
+  font-family: CustomFont, sans-serif;
 
 }
 .map{
@@ -23,6 +31,22 @@
   height: 100px;
   width: 100px;
 }
+
+h1{
+  font-family: CustomFont, sans-serif;
+  font-size: 70px;
+  text-align: center;
+}
+
+#start{
+  position:absolute;
+  font-family: CustomFont, sans-serif;
+  font-size: 50px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
 #game{
   position:relative;
 }
@@ -32,15 +56,24 @@
   right:20px;
   height:60px;
   width:60px;
+  font-family: CustomFont, sans-serif;
 }
 #cast{
   position:absolute;
   top:30px;
   left:0;
   font-size: 34px;
+  font-family: CustomFont, sans-serif;
 }
-#intstructions{
+#instructions{
   position:absolute;
+  font-size: 40px;
+  top: 5%;
+  left: 50%;
+  margin-right: -50%;
+
+  transform: translate(-50%, -50%);
+  font-family: CustomFont, sans-serif;
 }
 #catch{
   position:absolute;
@@ -48,10 +81,41 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  font-family: CustomFont, sans-serif;
 }
 #numFish{
   position:absolute;
   top: 80px;
   right: 20px;
+  font-family: CustomFont, sans-serif;
 
+}
+#fish{
+  padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+@keyframes pulse {
+      0% {
+        transform: scale(1) translate(-50%, -50%);
+      }
+      25% {
+        transform: scale(.9) translate(-50%, -50%);
+      }
+      50% {
+        transform: scale(1) translate(-50%, -50%);
+      }
+      75% {
+        transform: scale(1.1) translate(-50%, -50%);
+      }
+      100% {
+        transform: scale(1) translate(-50%, -50%);
+      }
+    }
+
+    @font-face {
+  font-family: "CustomFont";
+  src: url('Media/fisherman-regular-webfont.woff') format("woff");
 }
